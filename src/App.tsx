@@ -10,7 +10,7 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import RootLayout from "./components/organisms/RootLayout";
+import RootLayout from "./components/templates/RootLayout";
 import NavigationProvider from "./context/NavigationContext";
 
 const router = createBrowserRouter(
