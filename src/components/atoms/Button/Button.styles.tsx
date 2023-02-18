@@ -5,5 +5,8 @@ export const StyledButton = styled.button`
   border: solid 2px ${({ theme }) => theme.colors.darkTeal};
   color: ${({ theme }) => theme.colors.darkTeal};
   height: 3rem;
-  width: 15rem;
+  width: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 `;

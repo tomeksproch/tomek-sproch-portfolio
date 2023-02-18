@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  padding: 5rem 2.5rem 5rem 2.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -13,11 +14,18 @@ export const Wrapper = styled.div`
 `;
 
 export const AboutArticle = styled.article`
-  color: ${({ theme }) => theme.colors.darkTeal};
-  padding: 5rem 3rem;
+  color: ${({ theme }) => theme.colors.lightTeal};
+
+  h2 {
+    color: ${({ theme }) => theme.colors.darkTeal};
+  }
 `;
 
 export const SkillsArticle = styled.article`
-  color: ${({ theme }) => theme.colors.darkTeal};
-  padding: 0rem 3rem 4rem;
+  color: ${({ theme }) => theme.colors.lightTeal};
+  padding-top: 4rem;
+
+  h2 {
+    color: ${({ theme }) => theme.colors.darkTeal};
+  }
 `;

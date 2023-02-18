@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import Logo from "../../atoms/Logo/Logo";
 import HamburgerButton from "../../atoms/HamburgerButton/HamburgerButton";
-import NavLinks from "../../atoms/NavLinks/NavLinks";
+import MenuLinks from "../MenuLinks/MenuLinks";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { MainNav } from "./Navbar.styles";
 import { NavigationContext } from "../../../context/NavigationContext";
@@ -17,7 +17,7 @@ const Navbar = () => {
     <MainNav open={!!open}>
       <Logo />
       <HamburgerButton />
-      {open && <NavLinks />}
+      {open && <MenuLinks />}
     </MainNav>
   );
 };

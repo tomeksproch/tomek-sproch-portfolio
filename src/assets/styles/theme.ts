@@ -14,8 +14,9 @@ export const theme = {
     darkBeige: "#E9DAC1",
   },
   fontSize: {
+    xxxl: "44px",
     xxl: "34px",
-    xl: "24px",
+    xl: "26px",
     l: "17px",
     m: "12px",
     s: "11px",

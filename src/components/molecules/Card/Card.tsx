@@ -1,11 +1,16 @@
 import React from "react";
+import Button from "../../atoms/Button/Button";
+import CardTexts from "../../atoms/CardTexts/CardTexts";
 import SectionsTittle from "../../atoms/SectionsTittle/SectionsTittle";
+import { CardWrapper } from "./Card.styles";
 
-const Card = () => {
+const Card = (props: any) => {
   return (
-    <div>
-      <SectionsTittle>I build & design stuff</SectionsTittle>
-    </div>
+    <CardWrapper>
+      <SectionsTittle>{props.tittle}</SectionsTittle>
+      <CardTexts>{props.text}</CardTexts>
+      <Button>{props.buttonTittle}</Button>
+    </CardWrapper>
   );
 };
 

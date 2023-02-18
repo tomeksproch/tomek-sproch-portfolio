@@ -5,20 +5,19 @@ interface Props {
 }
 
 export const MainNav = styled.nav<Props>`
-  background-color: ${({ theme }) => theme.colors.darkTeal};
-  display: flex;
-  justify-content: space-between;
+  /* background-color: ${({ theme }) => theme.colors.darkTeal}; */
+  background-color: transparent;
+  display: inline-flex;
+  justify-content: space-around;
   align-items: center;
+  position: absolute;
   height: 4rem;
+  width: 100%;
   padding: 2rem 1rem 1rem;
 
   ${({ open }) =>
     open &&
     `
-   background-color: var(--main-color);
-  height: 4rem;
-  padding: 2rem 1rem 1rem;
-  display: flex;
-  justify-content: space-between;
+   background-color: white;
   `}
 `;

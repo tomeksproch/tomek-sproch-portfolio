@@ -1,8 +1,8 @@
-import React from 'react';
-import { StyledMainTittle } from './MainTittle.styles';
+import React from "react";
+import { StyledMainTittle } from "./MainTittle.styles";
 
 const MainTittle = () => {
-  return <StyledMainTittle>Frontend Developer 🖐🏻</StyledMainTittle>;
+  return <StyledMainTittle>Hi, I'm Tomasz! 🖐🏻</StyledMainTittle>;
 };
 
 export default MainTittle;

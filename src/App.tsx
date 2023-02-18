@@ -1,9 +1,9 @@
 import "./App.css";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./assets/styles/theme";
-import MainPage from "./components/organisms/MainPage/MainPage";
-import MyResumePage from "./components/organisms/MyResumePage/MyResumePage";
-import MyWorkPage from "./components/organisms/MyWorkPage/MyWorkPage";
+import MainPage from "./components/pages/MainPage/MainPage";
+import MyResumePage from "./components/pages/MyResumePage/MyResumePage";
+import MyWorkPage from "./components/pages/MyWorkPage/MyWorkPage";
 import {
   createBrowserRouter,
   createRoutesFromElements,
