@@ -10,7 +10,7 @@ const HamburgerButton = () => {
     <Burger>
       <Hamburger
         onToggle={toggleNavbar}
-        color={open ? "var(--main-color-dark)" : "var(--main-color)"}
+        color={open ? "var(--main-color-dark)" : "white"}
         hideOutline={false}
         easing="ease-in"
         toggled={open}

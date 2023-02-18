@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BigMenuWrapper = styled.div`
-  --offset: 64px;
+  --offset: 90px;
   position: absolute;
   top: var(--offset);
   left: 0;

@@ -1,21 +1,15 @@
 import styled from "styled-components";
+import SVG from "react-inlinesvg";
 
-interface Props {
+interface SVGProps {
   open: boolean;
 }
 
-export const LogoWrapper = styled.button<Props>`
-  background: none;
-  color: ${({ theme, open }) =>
-    open ? theme.colors.darkTeal : theme.colors.lightBeige};
-  font-size: ${({ theme }) => theme.fontSize.xxl};
-`;
-
-export const FirstEl = styled.span`
-  font-weight: ${({ theme }) => theme.fontWeight.light};
-  text-decoration: none;
-`;
-export const SecondEl = styled.span`
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
-  text-decoration: none;
+export const StyledSVG = styled(SVG)<SVGProps>`
+  height: 2.5rem;
+  width: auto;
+  & path {
+    fill: ${({ theme, open }) =>
+      open ? theme.colors.darkTeal : theme.colors.white};
+  }
 `;
