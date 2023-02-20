@@ -7,13 +7,8 @@ const HamburgerButton = () => {
   const { open, toggleNavbar } = useContext(NavigationContext);
 
   return (
-    <Burger>
-      <Hamburger
-        onToggle={toggleNavbar}
-        hideOutline={false}
-        easing="ease-in"
-        toggled={open}
-      />
+    <Burger open={open}>
+      <Hamburger onToggle={toggleNavbar} hideOutline={false} toggled={open} />
     </Burger>
   );
 };
