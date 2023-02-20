@@ -9,11 +9,13 @@ const CardContent = () => {
         tittle="Look at my projects!"
         text="My projects: web apps and experimental stuff."
         buttonTittle="See my projects!"
+        path="/myprojects"
       />
       <Card
         tittle="My Resume"
         text="Take a look to my resume. You can also download it."
         buttonTittle="See my resume!"
+        path="/myresume"
       />
     </CardContentStyles>
   );

@@ -9,7 +9,7 @@ const Card = (props: any) => {
     <CardWrapper>
       <SectionsTittle>{props.tittle}</SectionsTittle>
       <CardTexts>{props.text}</CardTexts>
-      <Button>{props.buttonTittle}</Button>
+      <Button tittle={props.buttonTittle} path={props.path} />
     </CardWrapper>
   );
 };
