@@ -3,6 +3,7 @@ import MainImageContent from "../../organisms/MainImageContent/MainImageContent"
 import AboutContent from "../../organisms/AboutContent/AboutContent";
 import CardContent from "../../organisms/CardContent/CardContent";
 import { MainPageFirsSectiion } from "./MainPage.styles";
+import SendMessageContent from "../../organisms/SendMessageContent/SendMessageContent";
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
       </MainPageFirsSectiion>
       <AboutContent />
       <CardContent />
+      <SendMessageContent />
     </div>
   );
 };
