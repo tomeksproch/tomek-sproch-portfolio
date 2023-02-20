@@ -11,8 +11,8 @@ const NavigationLinks = () => {
       <Link to="/" onClick={closeNavbar}>
         Home
       </Link>
-      <Link to="/mywork" onClick={closeNavbar}>
-        My Works
+      <Link to="/myprojects" onClick={closeNavbar}>
+        My Projects
       </Link>
       <Link to="/myresume" onClick={closeNavbar}>
         My Resume

@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./assets/styles/theme";
 import MainPage from "./components/pages/MainPage/MainPage";
 import MyResumePage from "./components/pages/MyResumePage/MyResumePage";
-import MyWorkPage from "./components/pages/MyWorkPage/MyWorkPage";
+import MyProjectsPage from "./components/pages/MyProjectsPage/MyProjectsPage";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -18,7 +18,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<MainPage />} />
       <Route path="myresume" element={<MyResumePage />} />
-      <Route path="mywork" element={<MyWorkPage />} />
+      <Route path="myprojects" element={<MyProjectsPage />} />
     </Route>
   )
 );

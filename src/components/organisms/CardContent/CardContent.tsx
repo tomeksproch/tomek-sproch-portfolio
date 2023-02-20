@@ -8,7 +8,7 @@ const CardContent = () => {
       <Card
         tittle="Look at my projects!"
         text="My projects: web apps and experimental stuff."
-        buttonTittle="See my works!"
+        buttonTittle="See my projects!"
       />
       <Card
         tittle="My Resume"
