@@ -6,4 +6,9 @@ export const MainText = styled.main`
   font-weight: ${({ theme }) => theme.fontWeight.light};
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  @media screen and (min-width: 581px) {
+    max-width: 15em;
+    font-size: ${({ theme }) => theme.fontSize.l};
+  }
 `;
