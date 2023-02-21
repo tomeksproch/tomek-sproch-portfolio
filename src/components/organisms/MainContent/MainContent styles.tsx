@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContentArticle = styled.article`
-  background-color: ${({ theme }) => theme.colors.darkTeal};
+  background-color: ${({ theme }) => theme.colors.pastelTeal};
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;

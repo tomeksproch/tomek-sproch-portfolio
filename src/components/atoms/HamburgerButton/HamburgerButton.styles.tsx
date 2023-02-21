@@ -10,9 +10,9 @@ export const Burger = styled.button<Props>`
   align-items: center;
   background: transparent;
   color: ${({ theme, open }) =>
-    open ? theme.colors.darkTeal : theme.colors.white};
+    open ? theme.colors.darkGrey : theme.colors.darkGrey};
 
   @media screen and (min-width: 581px) {
-    color: ${({ theme }) => theme.colors.darkTeal};
+    color: ${({ theme }) => theme.colors.darkGrey};
   }
 `;

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const StyledFooterContent = styled.div`
-  background-color: ${({ theme }) => theme.colors.darkBeige};
+  background-color: ${({ theme }) => theme.colors.darkGrey};
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.pastelWhite};
   padding: 5rem 3rem 3rem 3rem;
-  font-size: ${({ theme }) => theme.fontSize.l};
+  font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   a {
     text-decoration: none;

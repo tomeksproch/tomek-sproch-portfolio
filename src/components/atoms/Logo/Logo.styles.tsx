@@ -9,7 +9,6 @@ export const StyledSVG = styled(SVG)<SVGProps>`
   height: 2.5rem;
   width: auto;
   & path {
-    fill: ${({ theme, open }) =>
-      open ? theme.colors.darkTeal : theme.colors.white};
+    fill: ${({ theme }) => theme.colors.darkGrey};
   }
 `;

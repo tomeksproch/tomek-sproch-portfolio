@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.white};
-  font-size: ${({ theme }) => theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.s};
 
   h2 {
     font-size: ${({ theme }) => theme.fontSize.xl};
@@ -14,18 +14,18 @@ export const Wrapper = styled.div`
 `;
 
 export const AboutArticle = styled.article`
-  color: ${({ theme }) => theme.colors.lightTeal};
+  color: ${({ theme }) => theme.colors.darkGrey};
 
   h2 {
-    color: ${({ theme }) => theme.colors.darkTeal};
+    color: ${({ theme }) => theme.colors.darkGrey};
   }
 `;
 
 export const SkillsArticle = styled.article`
-  color: ${({ theme }) => theme.colors.lightTeal};
+  color: ${({ theme }) => theme.colors.darkGrey};
   padding-top: 4rem;
 
   h2 {
-    color: ${({ theme }) => theme.colors.darkTeal};
+    color: ${({ theme }) => theme.colors.darkGrey};
   }
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainText = styled.main`
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.darkGrey};
   font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   padding-top: 3rem;

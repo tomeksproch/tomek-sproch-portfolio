@@ -5,7 +5,7 @@ export const BigMenuWrapper = styled.div`
   position: absolute;
   top: var(--offset);
   left: 0;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.pastelWhite};
   height: calc(100vh - var(--offset));
   width: 100vw;
 `;
@@ -14,12 +14,12 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${({ theme }) => theme.colors.darkTeal};
+  color: ${({ theme }) => theme.colors.darkGrey};
   padding: 5rem 3rem 3rem 3rem;
   font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.darkTeal};
+    color: ${({ theme }) => theme.colors.darkGrey};
   }
 `;

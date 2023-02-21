@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardContentStyles = styled.div`
-  background-color: ${({ theme }) => theme.colors.darkTeal};
+  background-color: ${({ theme }) => theme.colors.pastelWhite};
   padding: 5rem 2rem 5rem 2rem;
   display: flex;
   flex-wrap: wrap;

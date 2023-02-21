@@ -4,14 +4,6 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --main-color: #f7ecde;
-  --main-color-dark: #54bab9;
-  --container-color: #fff;
-
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -79,7 +71,7 @@ button,
 input,
 textarea {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: 16px;
   background-color: #f9f9f9;
 }
 
@@ -106,20 +98,4 @@ button {
 img {
   max-width: 100%;
   height: auto;
-}
-
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 992px) {
-}
-
-/* For medium devices */
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 576px) {
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
 }

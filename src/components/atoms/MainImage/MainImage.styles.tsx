@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
+interface Props {
+  open: boolean;
+}
+
 export const ImageWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.lightBeige};
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
-  height: 20rem;
+  padding: 5rem 3rem 5rem 3rem;
 
   @media screen and (min-width: 581px) {
     height: 50%;
@@ -14,10 +16,11 @@ export const ImageWrapper = styled.div`
   }
 `;
 
-export const ImageStyles = styled.img`
+export const ImageStyles = styled.img<Props>`
   height: 15em;
   @media screen and (min-width: 581px) {
-    position: absolute;
+    height: 15em;
+    position: ${({ open }) => (open ? "" : "absolute")};
     right: 1rem;
     top: 25%;
   }
