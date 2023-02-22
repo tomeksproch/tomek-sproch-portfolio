@@ -4,10 +4,10 @@ export const StyledFooterContent = styled.div`
   background-color: ${({ theme }) => theme.colors.darkGrey};
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 4rem;
   color: ${({ theme }) => theme.colors.pastelWhite};
-  padding: 5rem 3rem 3rem 3rem;
-  font-size: ${({ theme }) => theme.fontSize.m};
+  padding: 1rem 2.5rem 5rem 2.5rem;
+  font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   a {
     text-decoration: none;
@@ -15,7 +15,20 @@ export const StyledFooterContent = styled.div`
   }
 
   h3 {
-    color: ${({ theme }) => theme.colors.white};
-    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    color: ${({ theme }) => theme.colors.lightGrey};
+    font-weight: ${({ theme }) => theme.fontWeight.normal};
   }
+`;
+
+export const Line = styled.div`
+  background-color: ${({ theme }) => theme.colors.lightGrey};
+  width: 100%;
+  height: 1px;
+  position: relative;
+`;
+
+export const CreatorText = styled.span`
+  color: ${({ theme }) => theme.colors.lightGrey};
+  position: relative;
+  top: -3rem;
 `;

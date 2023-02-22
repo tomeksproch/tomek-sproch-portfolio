@@ -7,7 +7,7 @@ export const BigMenuWrapper = styled.div`
   left: 0;
   background-color: ${({ theme }) => theme.colors.pastelWhite};
   height: calc(100vh - var(--offset));
-  width: 100vw;
+  width: 100%;
 `;
 
 export const Wrapper = styled.div`

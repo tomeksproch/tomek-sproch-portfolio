@@ -9,6 +9,7 @@ export const Burger = styled.button<Props>`
   justify-content: center;
   align-items: center;
   background: transparent;
+  position: relative;
   color: ${({ theme, open }) =>
     open ? theme.colors.darkGrey : theme.colors.darkGrey};
 
