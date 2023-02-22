@@ -9,7 +9,7 @@ export const MainNav = styled.nav<Props>`
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.5rem;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
   width: 100%;
   background-color: ${({ open, theme }) =>
     open ? theme.colors.pastelWhite : "transparent"};

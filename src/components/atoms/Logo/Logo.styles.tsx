@@ -6,7 +6,7 @@ interface SVGProps {
 }
 
 export const StyledSVG = styled(SVG)<SVGProps>`
-  height: 2.5rem;
+  height: 2.1rem;
   width: auto;
   & path {
     fill: ${({ theme }) => theme.colors.darkGrey};

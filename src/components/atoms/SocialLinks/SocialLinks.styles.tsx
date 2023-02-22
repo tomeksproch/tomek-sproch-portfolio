@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const StyledSocialLinks = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 2.5rem;
+  justify-content: space-around;
   text-decoration: none;
-  padding-top: 8rem;
+  padding-top: 9rem;
+  font-size: ${({ theme }) => theme.fontSize.l};
 
   a {
     color: ${({ theme }) => theme.colors.darkTeal};

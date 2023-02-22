@@ -13,11 +13,10 @@ export const BigMenuWrapper = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
   color: ${({ theme }) => theme.colors.darkGrey};
-  padding: 5rem 3rem 3rem 3rem;
-  font-size: ${({ theme }) => theme.fontSize.xl};
-  font-weight: ${({ theme }) => theme.fontWeight.light};
+  padding: 6rem 4rem;
+  font-weight: ${({ theme }) => theme.fontWeight.normal};
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.darkGrey};
