@@ -32,7 +32,7 @@ const SendMessageContent = () => {
         variant="standard"
       />
 
-      <Button type="submit" tittle="Send" />
+      <Button type="submit" tittle="Send message!" />
     </StyledForm>
   );
 };

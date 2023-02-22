@@ -9,7 +9,6 @@ export const CardWrapper = styled.div`
   padding: 2.5rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 
   h2 {
