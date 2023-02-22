@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   color: ${({ theme }) => theme.colors.darkGrey};
-  padding: 3rem 4rem;
+  padding: 4rem 4rem;
   font-weight: ${({ theme }) => theme.fontWeight.normal};
   a {
     text-decoration: none;

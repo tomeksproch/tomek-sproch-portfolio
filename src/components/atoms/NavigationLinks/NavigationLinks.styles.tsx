@@ -5,6 +5,5 @@ export const StyledNavigationLinks = styled.div`
   flex-direction: column;
   text-decoration: none;
   gap: 1rem;
-  padding-bottom: 3rem;
   font-size: ${({ theme }) => theme.fontSize.l};
 `;
