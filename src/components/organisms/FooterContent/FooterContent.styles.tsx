@@ -6,7 +6,7 @@ export const StyledFooterContent = styled.div`
   flex-direction: column;
   gap: 4rem;
   color: ${({ theme }) => theme.colors.pastelWhite};
-  padding: 1rem 2.5rem 5rem 2.5rem;
+  padding: 0rem 2.5rem 2.5rem 2.5rem;
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   a {
@@ -17,6 +17,7 @@ export const StyledFooterContent = styled.div`
   h3 {
     color: ${({ theme }) => theme.colors.lightGrey};
     font-weight: ${({ theme }) => theme.fontWeight.normal};
+    opacity: 30%;
   }
 `;
 
