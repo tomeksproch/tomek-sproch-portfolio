@@ -25,6 +25,7 @@ export const ProjectsTittle = styled.h4`
 
 export const ProjectsCaption = styled.p`
   padding-top: 1rem;
+  padding-bottom: 2rem;
 `;
 
 export const ProjectsLink = styled.a`
@@ -32,7 +33,6 @@ export const ProjectsLink = styled.a`
   font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   color: ${({ theme }) => theme.colors.darkGrey};
-  padding-top: 2rem;
 
   :hover {
     font-size: 20.5px;

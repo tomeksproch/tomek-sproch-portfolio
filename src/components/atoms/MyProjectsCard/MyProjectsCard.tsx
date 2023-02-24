@@ -13,8 +13,19 @@ const MyProjectsCard = (props: any) => {
       <ProjectsImage src={props.src} alt={props.alt} />
       <ProjectsTittle>{props.tittle}</ProjectsTittle>
       <ProjectsCaption>{props.text}</ProjectsCaption>
-      <ProjectsLink href={props.href} target="_blank" rel="noopener noreferrer">
-        Look at the code! 👈🏻
+      <ProjectsLink
+        href={props.href1}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Demo! 👈🏻
+      </ProjectsLink>
+      <ProjectsLink
+        href={props.href2}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Code on GitHub! 👈🏻
       </ProjectsLink>
     </MyProjectsCardWrapper>
   );
