@@ -12,9 +12,9 @@ export const MainNav = styled.nav<Props>`
   padding: 2rem 2.5rem 2.5rem 2.5rem;
   width: 100%;
   background-color: ${({ open, theme }) =>
-    open ? theme.colors.pastelWhite : "transparent"};
+    open ? theme.colors.initialColor : "transparent"};
 
-  ${({ open, theme }) =>
+  /* ${({ open, theme }) =>
     open &&
-    `background-color: ${({ theme }: any) => theme.colors.pastelWhite};`}
+    `background-color: ${({ theme }: any) => theme.colors.initialColor};`} */
 `;

@@ -5,7 +5,7 @@ export const BigMenuWrapper = styled.div`
   position: absolute;
   top: var(--offset);
   left: 0;
-  background-color: ${({ theme }) => theme.colors.pastelWhite};
+  background-color: ${({ theme }) => theme.colors.initialColor};
   height: calc(100vh - var(--offset));
   width: 100%;
 `;

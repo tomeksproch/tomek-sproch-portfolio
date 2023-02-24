@@ -15,8 +15,3 @@ export const CardWrapper = styled.div`
     color: ${({ theme }) => theme.colors.darkGrey};
   }
 `;
-
-export const CardImgStyles = styled.img`
-  background-color: ${({ theme }) => theme.colors.pastelWhite};
-  padding: 20px;
-`;
