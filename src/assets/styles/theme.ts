@@ -13,6 +13,7 @@ export const theme = {
     warning: "#E1D888",
   },
   fontSize: {
+    desktop: "64px",
     xxxl: "44px",
     xxl: "34px",
     xl: "26px",
@@ -27,4 +28,18 @@ export const theme = {
     semiBold: 600,
     bold: 700,
   },
+};
+
+export const BRAKEPOINTS = {
+  tabletMin: 550,
+  laptopMin: 1100,
+  desktopMin: 1500,
+  bigDevicesMin: 2200,
+};
+
+export const QUERIES = {
+  tabletAndUp: `(min-width: ${BRAKEPOINTS.tabletMin / 16}rem)`,
+  laptopAndUp: `(min-width: ${BRAKEPOINTS.laptopMin / 16}rem)`,
+  desktopAndUp: `(min-width: ${BRAKEPOINTS.desktopMin / 16}rem)`,
+  bigDevicesAndUp: `(min-width: ${BRAKEPOINTS.bigDevicesMin / 16}rem)`,
 };

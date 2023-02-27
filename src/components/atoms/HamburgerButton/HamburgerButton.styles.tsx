@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../assets/styles/theme";
 
 interface Props {
   open: boolean;
@@ -15,5 +16,9 @@ export const Burger = styled.button<Props>`
 
   @media screen and (min-width: 581px) {
     color: ${({ theme }) => theme.colors.darkGrey};
+  }
+
+  @media ${QUERIES.bigDevicesAndUp} {
+    z-index: 999;
   }
 `;

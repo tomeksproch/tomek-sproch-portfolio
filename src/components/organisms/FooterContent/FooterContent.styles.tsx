@@ -1,7 +1,15 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../assets/styles/theme";
+
+export const FooterWrapper = styled.div`
+  background-color: ${({ theme }) => theme.colors.darkGrey};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+`;
 
 export const StyledFooterContent = styled.div`
-  background-color: ${({ theme }) => theme.colors.darkGrey};
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -18,6 +26,10 @@ export const StyledFooterContent = styled.div`
     color: ${({ theme }) => theme.colors.lightGrey};
     font-weight: ${({ theme }) => theme.fontWeight.normal};
     opacity: 30%;
+  }
+
+  @media ${QUERIES.bigDevicesAndUp} {
+    width: 60%;
   }
 `;
 

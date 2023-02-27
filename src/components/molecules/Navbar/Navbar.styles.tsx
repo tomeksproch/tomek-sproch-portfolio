@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../assets/styles/theme";
 
 interface Props {
   open: boolean;
@@ -14,7 +15,9 @@ export const MainNav = styled.nav<Props>`
   background-color: ${({ open, theme }) =>
     open ? theme.colors.initialColor : "transparent"};
 
-  /* ${({ open, theme }) =>
-    open &&
-    `background-color: ${({ theme }: any) => theme.colors.initialColor};`} */
+  @media ${QUERIES.bigDevicesAndUp} {
+    padding: 4rem 10rem 2.5rem 10rem;
+    position: fixed;
+    background-color: transparent;
+  }
 `;

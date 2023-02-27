@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../assets/styles/theme";
 
 export const StyledButton = styled.button`
   background: transparent;
@@ -9,4 +10,10 @@ export const StyledButton = styled.button`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media ${QUERIES.bigDevicesAndUp} {
+    font-size: ${({ theme }) => theme.fontSize.xl};
+    height: 4rem;
+    width: 18rem;
+  }
 `;

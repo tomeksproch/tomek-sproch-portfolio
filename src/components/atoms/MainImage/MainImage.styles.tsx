@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../assets/styles/theme";
 
 interface Props {
   open: boolean;
@@ -14,6 +15,9 @@ export const ImageWrapper = styled.div`
     height: 50%;
     width: 10rem;
   }
+
+  @media ${QUERIES.bigDevicesAndUp} {
+  }
 `;
 
 export const ImageStyles = styled.img<Props>`
@@ -23,5 +27,12 @@ export const ImageStyles = styled.img<Props>`
     position: ${({ open }) => (open ? "" : "absolute")};
     right: 1rem;
     top: 25%;
+  }
+
+  @media ${QUERIES.bigDevicesAndUp} {
+    height: 23rem;
+    position: ${({ open }) => (open ? "absolute" : "absolute")};
+    right: 40rem;
+    top: 20%;
   }
 `;

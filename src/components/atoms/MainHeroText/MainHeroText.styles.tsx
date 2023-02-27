@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../assets/styles/theme";
 
 export const MainText = styled.main`
   color: ${({ theme }) => theme.colors.darkGrey};
@@ -9,6 +10,11 @@ export const MainText = styled.main`
 
   @media screen and (min-width: 581px) {
     max-width: 15em;
+    font-size: ${({ theme }) => theme.fontSize.l};
+  }
+
+  @media ${QUERIES.bigDevicesAndUp} {
+    max-width: 700px;
     font-size: ${({ theme }) => theme.fontSize.l};
   }
 `;

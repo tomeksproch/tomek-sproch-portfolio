@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import Logo from "../../atoms/Logo/Logo";
 import HamburgerButton from "../../atoms/HamburgerButton/HamburgerButton";
 import MenuLinks from "../MenuLinks/MenuLinks";
@@ -8,10 +8,17 @@ import { NavigationContext } from "../../../context/NavigationContext";
 
 const Navbar = () => {
   const { open } = useContext(NavigationContext);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
-    open ? disableBodyScroll(document.body) : enableBodyScroll(document.body);
-  }, [open]);
+    setWindowSize(window.innerWidth);
+
+    if (windowSize < 500 && open) {
+      disableBodyScroll(document.body);
+    } else {
+      enableBodyScroll(document.body);
+    }
+  }, [open, windowSize]);
 
   return (
     <MainNav open={!!open}>
