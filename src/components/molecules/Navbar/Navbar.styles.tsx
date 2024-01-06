@@ -10,13 +10,14 @@ export const MainNav = styled.nav<Props>`
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  padding: 2rem;
   width: 100%;
   background-color: ${({ open, theme }) =>
     open ? theme.colors.initialColor : "transparent"};
+    z-index: 10;
 
-  @media ${QUERIES.bigDevicesAndUp} {
-    padding: 4rem 10rem 2.5rem 10rem;
+  @media ${QUERIES.tabletAndUp} {
+    padding: 2rem 2rem;
     position: fixed;
     background-color: transparent;
   }

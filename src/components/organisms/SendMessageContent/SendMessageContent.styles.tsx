@@ -4,9 +4,13 @@ import { QUERIES } from "../../../assets/styles/theme";
 export const SendMeMessageWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.darkGrey};
-  padding: 10rem 2.5rem 10rem 2.5rem;
+  padding: 6rem 2rem;
 
-  @media ${QUERIES.bigDevicesAndUp} {
+  @media ${QUERIES.tabletAndUp}{
+    padding: 6rem 5rem;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +27,7 @@ export const StyledForm = styled.form`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  @media ${QUERIES.bigDevicesAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

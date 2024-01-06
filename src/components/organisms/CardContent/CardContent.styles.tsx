@@ -3,14 +3,18 @@ import { QUERIES } from "../../../assets/styles/theme";
 
 export const CardContentStyles = styled.div`
   background-color: ${({ theme }) => theme.colors.pastelWhite};
-  padding: 5rem 2rem 5rem 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  padding: 6rem 2rem;
 
-  @media ${QUERIES.bigDevicesAndUp} {
+  @media ${QUERIES.tabletAndUp}{
+    flex-direction: row;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
     height: 100vh;
   }
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { QUERIES } from "../../../assets/styles/theme";
 
 export const Wrapper = styled.div`
-  padding: 5rem 2.5rem 5rem 2.5rem;
+  padding: 6rem 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -15,12 +15,15 @@ export const Wrapper = styled.div`
     font-weight: ${({ theme }) => theme.fontWeight.bold};
   }
 
-  @media ${QUERIES.bigDevicesAndUp} {
+  @media ${QUERIES.tabletAndUp}{
+    padding: 6rem 5rem;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
     flex-direction: row;
-    height: 60vh;
+    height: 100vh;
     align-items: center;
     gap: 10rem;
-    font-size: ${({ theme }) => theme.fontSize.l};
 
     h2 {
       font-size: ${({ theme }) => theme.fontSize.xxxl};
@@ -29,16 +32,14 @@ export const Wrapper = styled.div`
 `;
 
 export const AboutArticle = styled.article`
-  @media ${QUERIES.bigDevicesAndUp} {
-    max-width: 700px;
+  @media ${QUERIES.laptopAndUp} {
     padding-bottom: 10rem;
   }
 `;
 
 export const SkillsArticle = styled.article`
   padding-top: 4rem;
-  @media ${QUERIES.bigDevicesAndUp} {
-    max-width: 700px;
+  @media ${QUERIES.laptopAndUp} {
     padding-top: 10rem;
   }
 `;

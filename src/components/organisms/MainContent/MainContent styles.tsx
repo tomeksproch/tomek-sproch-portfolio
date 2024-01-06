@@ -3,20 +3,18 @@ import { QUERIES } from "../../../assets/styles/theme";
 
 export const MainContentArticle = styled.article`
   background-color: ${({ theme }) => theme.colors.pastelTeal};
+  padding: 7rem 2rem 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  padding: 7rem 2.5rem 2.5rem 2.5rem;
+  align-items: flex-start;
 
-  @media ${QUERIES.bigDevicesAndUp} {
-    width: 70%;
-    height: 50rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 15rem;
+ 
+
+  @media ${QUERIES.tabletAndUp} {
+    background-color: transparent;
+    padding: 0;
   }
+
+ 
 `;

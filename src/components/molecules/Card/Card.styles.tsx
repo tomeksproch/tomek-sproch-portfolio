@@ -6,29 +6,39 @@ export const CardWrapper = styled.div`
   color: ${({ theme }) => theme.colors.darkGrey};
   border-radius: 0px 10px 0px 10px;
   height: 330px;
-  width: 330px;
   padding: 2.5rem;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
   box-shadow: 10px 10px 0px -5px #d9e4dd;
 
   h2 {
     color: ${({ theme }) => theme.colors.darkGrey};
+    text-align: left;
+    max-width: 270px;
   }
 
-  @media ${QUERIES.bigDevicesAndUp} {
-    height: 700px;
+  article{
+    text-align: left;
+    max-width: 250px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    height: 550px;
     width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    text-align: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 4rem;
+    font-size: ${({ theme }) => theme.fontSize.l};
+
 
     h2 {
       font-size: ${({ theme }) => theme.fontSize.xxxl};
+      text-align: left;
     }
   }
 `;

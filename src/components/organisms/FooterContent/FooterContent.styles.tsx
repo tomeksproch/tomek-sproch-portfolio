@@ -3,10 +3,11 @@ import { QUERIES } from "../../../assets/styles/theme";
 
 export const FooterWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.darkGrey};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
+  padding: 4rem 2rem;
+
+  @media ${QUERIES.tabletAndUp}{
+    padding: 5rem;
+  }
 `;
 
 export const StyledFooterContent = styled.div`
@@ -14,7 +15,6 @@ export const StyledFooterContent = styled.div`
   flex-direction: column;
   gap: 4rem;
   color: ${({ theme }) => theme.colors.pastelWhite};
-  padding: 0rem 2.5rem 2.5rem 2.5rem;
   font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: ${({ theme }) => theme.fontWeight.light};
   a {
@@ -28,9 +28,7 @@ export const StyledFooterContent = styled.div`
     opacity: 30%;
   }
 
-  @media ${QUERIES.bigDevicesAndUp} {
-    width: 60%;
-  }
+ 
 `;
 
 export const Line = styled.div`

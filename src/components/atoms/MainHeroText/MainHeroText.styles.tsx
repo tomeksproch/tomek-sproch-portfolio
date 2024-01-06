@@ -8,13 +8,13 @@ export const MainText = styled.main`
   padding-top: 3rem;
   padding-bottom: 3rem;
 
-  @media screen and (min-width: 581px) {
-    max-width: 15em;
-    font-size: ${({ theme }) => theme.fontSize.l};
+  @media ${QUERIES.tabletAndUp}{
+    max-width: 25rem;
   }
 
-  @media ${QUERIES.bigDevicesAndUp} {
-    max-width: 700px;
-    font-size: ${({ theme }) => theme.fontSize.l};
+
+  @media ${QUERIES.laptopAndUp}{
+    max-width: 35rem;
   }
+
 `;

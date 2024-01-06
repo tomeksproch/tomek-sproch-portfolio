@@ -11,9 +11,14 @@ export const StyledButton = styled.button`
   justify-content: space-around;
   align-items: center;
 
+
+  @media ${QUERIES.laptopAndUp} {
+    font-size: ${({ theme }) => theme.fontSize.l};
+    width: 18rem;
+  }
+
   @media ${QUERIES.bigDevicesAndUp} {
     font-size: ${({ theme }) => theme.fontSize.xl};
     height: 4rem;
-    width: 18rem;
   }
 `;

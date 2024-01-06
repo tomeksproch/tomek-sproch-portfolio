@@ -8,11 +8,11 @@ const AboutContent = () => {
   return (
     <Wrapper>
       <AboutArticle>
-        <SectionsTittle children="WHO AM I?" />
+        <SectionsTittle children="Who am I?" />
         <AboutText />
       </AboutArticle>
       <SkillsArticle>
-        <SectionsTittle children="MY SKILLS" />
+        <SectionsTittle children="My skills" />
         <SkillsText />
       </SkillsArticle>
     </Wrapper>

@@ -6,33 +6,25 @@ interface Props {
 }
 
 export const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 3rem 5rem 3rem;
+  padding: 6rem 4rem;
+  background-color: ${({ theme }) => theme.colors.pastelWhite};
 
-  @media screen and (min-width: 581px) {
-    height: 50%;
-    width: 10rem;
-  }
-
-  @media ${QUERIES.bigDevicesAndUp} {
+@media ${QUERIES.tabletAndUp} {
+    background-color: transparent;
+    padding: 0;
   }
 `;
 
 export const ImageStyles = styled.img<Props>`
-  height: 15em;
-  @media screen and (min-width: 581px) {
-    height: 15em;
-    position: ${({ open }) => (open ? "" : "absolute")};
-    right: 1rem;
-    top: 25%;
+@media ${QUERIES.tabletAndUp} {
+    height: 100%;
+    width: 100%;
+    min-width: 14rem;
+    max-width: 20rem;
   }
 
-  @media ${QUERIES.bigDevicesAndUp} {
-    height: 23rem;
-    position: ${({ open }) => (open ? "absolute" : "absolute")};
-    right: 40rem;
-    top: 20%;
+  @media ${QUERIES.laptopAndUp} {
+    margin-right: 10rem;
   }
+
 `;
