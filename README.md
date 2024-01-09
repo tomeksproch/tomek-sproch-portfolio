@@ -1,4 +1,4 @@
-# LIVE DEMO: https://sproch.netlify.app/
+# LIVE DEMO: https://sproch.netlify.app/   <--- pracę nadal trwają wkrótcę bedzię dostępna wersja na sproch.dev
 
 
 # This project is in porgress...
