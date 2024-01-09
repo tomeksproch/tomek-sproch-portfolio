@@ -1,6 +1,17 @@
 import styled from "styled-components";
 import { QUERIES } from "../../../assets/styles/theme";
 
+
+export const MainPageWrapper = styled.div`
+height: 100vh;
+
+@media ${QUERIES.laptopAndUp}{
+  scroll-snap-type:  y proximity;
+  overflow-y: scroll;
+}
+`;
+
+
 export const MainPageFirsSectiion = styled.div`
 width: 100%;
 
@@ -14,10 +25,26 @@ width: 100%;
   gap: 1rem;
   }
 
-  @media screen and (min-width: 581px) {
-  }
-`;
-
-export const MainPageWrapper = styled.div`
+  @media ${QUERIES.laptopAndUp}{
+  scroll-snap-align: start;
+}
 
 `;
+
+export const MainPageSecondSectiion = styled.div`
+@media ${QUERIES.laptopAndUp}{
+  scroll-snap-align: start;
+}
+`
+
+export const MainPageThirdSectiion = styled.div`
+@media ${QUERIES.laptopAndUp}{
+  scroll-snap-align: start;
+}
+`
+
+export const MainPageFourthSectiion = styled.div`
+@media ${QUERIES.laptopAndUp}{
+  scroll-snap-align: start;
+}
+`
