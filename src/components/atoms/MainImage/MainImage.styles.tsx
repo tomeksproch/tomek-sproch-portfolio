@@ -27,4 +27,10 @@ export const ImageStyles = styled.img<Props>`
     margin-right: 10rem;
   }
 
+  @media ${QUERIES.desktopAndUp} {
+    margin-right: 14rem;
+    max-width: 25rem;
+  }
+
+
 `;

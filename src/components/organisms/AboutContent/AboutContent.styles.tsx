@@ -1,14 +1,22 @@
 import styled from "styled-components";
 import { QUERIES } from "../../../assets/styles/theme";
 
+export const AboutContentStyles = styled.div`
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.white};
+  font-size: ${({ theme }) => theme.fontSize.s};
+  color: ${({ theme }) => theme.colors.darkGrey};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 export const Wrapper = styled.div`
+  width: 100%;
   padding: 6rem 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.white};
-  font-size: ${({ theme }) => theme.fontSize.s};
-  color: ${({ theme }) => theme.colors.darkGrey};
 
   h2 {
     font-size: ${({ theme }) => theme.fontSize.xl};
@@ -21,13 +29,22 @@ export const Wrapper = styled.div`
 
   @media ${QUERIES.laptopAndUp} {
     flex-direction: row;
-    height: 100vh;
+    height: 70vh;
     align-items: center;
     gap: 10rem;
 
     h2 {
       font-size: ${({ theme }) => theme.fontSize.xxxl};
     }
+  }
+
+  @media ${QUERIES.desktopAndUp}{
+    padding: 0rem 11rem;
+  }
+
+  @media ${QUERIES.bigDevicesAndUp}{
+    padding: 0;
+    max-width: 1500px;
   }
 `;
 

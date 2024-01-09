@@ -2,10 +2,11 @@ import React from "react";
 import AboutText from "../../atoms/AboutText/AboutText";
 import SectionsTittle from "../../atoms/SectionsTittle/SectionsTittle";
 import SkillsText from "../../atoms/SkillsText/SkillsText";
-import { Wrapper, AboutArticle, SkillsArticle } from "./AboutContent.styles";
+import { AboutContentStyles, Wrapper, AboutArticle, SkillsArticle } from "./AboutContent.styles";
 
 const AboutContent = () => {
   return (
+    <AboutContentStyles>
     <Wrapper>
       <AboutArticle>
         <SectionsTittle children="Who am I?" />
@@ -16,6 +17,7 @@ const AboutContent = () => {
         <SkillsText />
       </SkillsArticle>
     </Wrapper>
+    </AboutContentStyles>
   );
 };
 
