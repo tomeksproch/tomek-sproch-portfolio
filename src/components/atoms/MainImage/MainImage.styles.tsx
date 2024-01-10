@@ -8,6 +8,7 @@ interface Props {
 export const ImageWrapper = styled.div`
   padding: 6rem 4rem;
   background-color: ${({ theme }) => theme.colors.pastelWhite};
+  position: relative;
 
 @media ${QUERIES.tabletAndUp} {
     background-color: transparent;
@@ -16,6 +17,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const ImageStyles = styled.img<Props>`
+z-index: 1;
 @media ${QUERIES.tabletAndUp} {
     height: 100%;
     width: 100%;
@@ -34,3 +36,4 @@ export const ImageStyles = styled.img<Props>`
 
 
 `;
+

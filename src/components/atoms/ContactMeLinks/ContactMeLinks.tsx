@@ -5,7 +5,7 @@ const ContactMeLinks = () => {
   return (
     <StyledContactMeLinks>
       <h3>CONTACT ME</h3>
-      <a href="mailto:hello@sproch.dev">hello@sproch.dev</a>
+      <a href="mailto:tomek.sproch@gmail.com">tomek.sproch@gmail.com</a>
       <a
         href="https://wa.me/48888696986"
         target="_blank"
