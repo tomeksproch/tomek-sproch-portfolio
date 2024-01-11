@@ -7,10 +7,10 @@ interface SVGProps {
 
 export const StyledSocialLinks = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  padding-top: 6rem;
+  padding-top: 1rem;
   font-size: ${({ theme }) => theme.fontSize.l};
 
   a {
