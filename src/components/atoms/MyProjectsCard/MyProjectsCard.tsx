@@ -3,30 +3,33 @@ import {
   MyProjectsCardWrapper,
   ProjectsImage,
   ProjectsTittle,
-  ProjectsCaption,
   ProjectsLink,
+  CardInfoWrapper,
 } from "./MyProjectsCard.styles";
 
 const MyProjectsCard = (props: any) => {
   return (
     <MyProjectsCardWrapper>
       <ProjectsImage src={props.src} alt={props.alt} />
+      <CardInfoWrapper>
       <ProjectsTittle>{props.tittle}</ProjectsTittle>
-      <ProjectsCaption>{props.text}</ProjectsCaption>
       <ProjectsLink
         href={props.href1}
         target="_blank"
         rel="noopener noreferrer"
-      >
-        Demo! 👈🏻
+        >
+        {props.shortLink}
       </ProjectsLink>
-      <ProjectsLink
-        href={props.href2}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Code on GitHub! 👈🏻
-      </ProjectsLink>
+      {props.href2 && ( 
+          <ProjectsLink
+            href={props.href2}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Code on GitHub! 👈🏻
+          </ProjectsLink>
+        )}
+        </CardInfoWrapper>
     </MyProjectsCardWrapper>
   );
 };
