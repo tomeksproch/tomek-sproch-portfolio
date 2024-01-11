@@ -56,6 +56,8 @@ export const Wrapper = styled.div`
 `;
 
 export const AboutArticle = styled.article`
+position: relative;
+
   @media ${QUERIES.laptopAndUp} {
     padding-bottom: 10rem;
   }
@@ -90,11 +92,37 @@ display: none;
   display: flex;
   position: absolute;
   fill: ${({ theme }) => theme.colors.pastelTeal};
-  right:250px;
-  top: -450px;
-  width: 300px;
+  right:70px;
+  top: -400px;
+  width: 220px;
   z-index: 0;
   }
 `
 
+export const FourDotClipartOne = styled(SVG)<SVGProps>`
+display: none;
 
+@media ${QUERIES.laptopAndUp}{
+  display: flex;
+  position: absolute;
+  stroke: ${({ theme }) => theme.colors.pastelTeal};
+  right:350px;
+  top: -20px;
+  width: 100px;
+  z-index: 0;
+  }
+`
+
+export const FourDotClipartTwo = styled(SVG)<SVGProps>`
+display: none;
+
+@media ${QUERIES.laptopAndUp}{
+  display: flex;
+  position: absolute;
+  stroke: ${({ theme }) => theme.colors.pastelTeal};
+  left:450px;
+  top: 300px;
+  width: 100px;
+  z-index: 0;
+  }
+`

@@ -28,11 +28,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 3rem;
   color: ${({ theme }) => theme.colors.darkGrey};
   padding: 4rem 4rem;
   font-weight: ${({ theme }) => theme.fontWeight.normal};
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.darkGrey};
+    width: max-content;
   }
 `;

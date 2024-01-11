@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import { QUERIES } from "../../../assets/styles/theme";
+import SVG from "react-inlinesvg";
+
+interface SVGProps {
+}
 
 export const FooterWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.darkGrey};
-  
   display: flex;
   justify-content: center;
 
   @media ${QUERIES.tabletAndUp}{
-    padding: 5rem 0;
+    padding: 10rem 0;
   }
 `;
 
@@ -33,6 +36,11 @@ export const StyledFooterContent = styled.div`
     opacity: 30%;
   }
 
+  @media ${QUERIES.tabletAndUp}{
+    gap: 8rem;
+    
+  }
+
   @media ${QUERIES.desktopAndUp}{
     padding: 0rem 11rem;
     
@@ -54,6 +62,69 @@ export const Line = styled.div`
 
 export const CreatorText = styled.span`
   color: ${({ theme }) => theme.colors.lightGrey};
-  position: relative;
-  top: -3rem;
+  font-size: ${({theme})=> theme.fontSize.l};
 `;
+
+
+
+export const NavigationAndContactWrapper = styled.div`
+display: flex;
+flex-direction: column;
+gap: 3rem;
+
+a{
+  white-space: nowrap;
+}
+
+
+ @media ${QUERIES.tabletAndUp}{
+  max-width: 70%;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+    
+  }
+
+  @media ${QUERIES.laptopAndUp}{
+    max-width: 50%;
+  }
+
+`
+
+export const LineAndOthersWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`
+
+export const FooterSocialIconsWrapper = styled.div`
+display: none;
+
+@media ${QUERIES.tabletAndUp}{
+  display: flex;
+justify-content: space-between;
+gap: 1.5rem;
+align-items: center;
+    
+  }
+`
+
+
+export const FooterSocialAndCreatorWrapper = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+`
+
+export const FooterInstaIcon = styled(SVG)<SVGProps>`
+stroke: ${({ theme }) => theme.colors.lightGrey};
+`
+
+export const FooterGithubIcon = styled(SVG)<SVGProps>`
+stroke: ${({ theme }) => theme.colors.lightGrey};
+`
+
+export const FooterLinkedinIcon = styled(SVG)<SVGProps>`
+stroke: ${({ theme }) => theme.colors.lightGrey};
+`

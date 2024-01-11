@@ -7,6 +7,7 @@ export const CardContentWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
   
 @media ${QUERIES.laptopAndUp} {
     height: 100vh;
@@ -22,6 +23,7 @@ export const CardContentStyles = styled.div`
   align-items: center;
   gap: 5px;
   padding: 6rem 2rem;
+  z-index: 3;
 
   @media ${QUERIES.tabletAndUp}{
     flex-direction: row;

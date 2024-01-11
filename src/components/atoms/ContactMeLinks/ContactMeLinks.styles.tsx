@@ -4,9 +4,12 @@ export const StyledContactMeLinks = styled.div`
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  padding-top: 6rem;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: ${({ theme }) => theme.fontSize.l};
+  
+  a{
+    width: max-content;
+  }
 
   h3 {
     display: flex;
