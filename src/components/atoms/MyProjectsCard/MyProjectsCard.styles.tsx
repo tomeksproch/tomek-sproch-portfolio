@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "../../../assets/styles/theme";
 
 export const MyProjectsCardWrapper = styled.li`
   background-color: ${({ theme }) => theme.colors.white};
@@ -19,9 +20,11 @@ export const MyProjectsCardWrapper = styled.li`
     flex-basis: calc((100% - 2em) / 3);
 }
 
+@media ${QUERIES.laptopAndUp}{
   :hover{
     transform: translateY(-8px);
     box-shadow: 10px 10px 0px -5px #f9f9f9;
+}
 }
 `;
 
