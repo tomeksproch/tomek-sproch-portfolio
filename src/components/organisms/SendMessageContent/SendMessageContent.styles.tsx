@@ -9,7 +9,6 @@ interface SVGProps {
 export const SendMeMessageWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.darkGrey};
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,20 +18,32 @@ export const SendMeMessageWrapper = styled.div`
   h2 {
     font-size: ${({ theme }) => theme.fontSize.xxxl};
   }
+  @media ${QUERIES.laptopAndUp}{
+    height: 100vh;
+  }
 `;
 
 export const SendMessageTexts = styled.div`
 padding: 6rem 2rem;
 z-index: 1;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
 @media ${QUERIES.tabletAndUp}{
     padding: 6rem 5rem;
+  }
+  
+  @media ${QUERIES.desktopAndUp}{
+    padding: 0rem 11rem;
   }
 
  @media ${QUERIES.bigDevicesAndUp} {
     max-width: 1500px;
     padding: 0;
   }
+
   
 `
 
@@ -70,7 +81,7 @@ display: none;
   position: absolute;
   stroke: ${({ theme }) => theme.colors.initialColor};
   left: -500px;
-  top: -300px;
+  top: -550px;
   z-index: 0;
   height: 1500px;
   stroke-width: 4px;
@@ -84,8 +95,8 @@ display: none;
   display: flex;
   position: absolute;
   fill: ${({ theme }) => theme.colors.pastelTeal};
-  right:150px;
-  top: -40px;
+  right:200px;
+  top: -80px;
   width: 220px;
   z-index: 0;
   }
@@ -98,7 +109,7 @@ display: none;
   display: flex;
   position: absolute;
   stroke: ${({ theme }) => theme.colors.pastelTeal};
-  right:420px;
+  right:520px;
   bottom: 220px;
   width: 100px;
   z-index: 0;
