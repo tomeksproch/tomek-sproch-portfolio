@@ -7,6 +7,7 @@ export const theme = {
     middleGrey: "#AEBAAA",
     pastelTeal: "#D9E4DD",
     pastelWhite: "#FBF7F0",
+    contrastLinkColor: "#4C8BF5",
     black: "#000",
     success: "#8FCB81",
     error: "#FF8383",

@@ -1,40 +1,68 @@
-import { StyledForm, SendMeMessageWrapper } from "./SendMessageContent.styles";
-import { TextField } from "@mui/material";
-import Button from "../../atoms/Button/Button";
+import React from "react";
+import { SendMeMessageWrapper, SendMessageTexts, TittleLink,LinkDescription, SeeYouText, BubleClipart, FourDotClipartOne,DotClipart } from "./SendMessageContent.styles";
+import bubleClipartSvg from '../../../assets/images/adds/ts-svg-9.svg'
+import dotClipartSvg from '../../../assets/images/adds/ts-svg-2.svg'
+import dotsFourClipartSvg from '../../../assets/images/adds/ts-svg-10.svg'
 import SectionsTittle from "../../atoms/SectionsTittle/SectionsTittle";
 
 const SendMessageContent = () => {
   return (
     <SendMeMessageWrapper>
-      <StyledForm onSubmit={() => console.log("elo")}>
+            <DotClipart src={dotClipartSvg} />
+      <SendMessageTexts>
         <SectionsTittle>Send me a message!</SectionsTittle>
-        <TextField
-          variant="standard"
-          label="Your name"
-          placeholder="Enter your name"
-          fullWidth
-        />
 
-        <TextField
-          label="Your email"
-          type="email"
-          placeholder="Enter your email adress"
-          variant="standard"
-          fullWidth
-        />
+<TittleLink>
+        <a href="mailto:tomek.sproch@gmail.com">📧 Email:</a>
+</TittleLink>
+        <LinkDescription>
+          For swift and detailed communication, drop me an email at <a href="mailto:tomek.sproch@gmail.com">tomek.sproch@gmail.com</a>. I'm always ready to discuss exciting opportunities and answer any questions you might have.
+        </LinkDescription>
+        <TittleLink>
+        <a
+          href="https://wa.me/48888696986"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📲 WhatsApp:
+        </a>
+        </TittleLink>
+        <LinkDescription>
+          For a quick chat and seamless communication, reach out on{" "}
+          <a
+            href="https://wa.me/48888696986"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp.{" "}
+          </a>
+          Let's connect and explore how we can work together to create something extraordinary.
+        </LinkDescription>
+        <TittleLink>
+        <a
+          href="https://www.instagram.com/tomeksproch/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          📱 Instagram:
+        </a>
+          </TittleLink>
+        <LinkDescription>
+          Catch a glimpse of my work and shoot me a message on Instagram{" "}
+          <a
+            href="https://www.instagram.com/tomeksproch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @tomeksproch.
+          </a>{" "}
+          Direct messages are open for collaboration and inquiries.
+        </LinkDescription>
 
-        <TextField
-          id="outlined-multiline"
-          label="Your message"
-          fullWidth
-          multiline
-          rows={7}
-          placeholder="Enter your message"
-          variant="standard"
-        />
-
-        <Button type="submit" tittle="Send message!" />
-      </StyledForm>
+        <SeeYouText>Looking forward to hearing from you! 🖐🏻</SeeYouText>
+      </SendMessageTexts>
+      <BubleClipart src={bubleClipartSvg} />
+      <FourDotClipartOne src={dotsFourClipartSvg} />
     </SendMeMessageWrapper>
   );
 };
